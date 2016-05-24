@@ -1,0 +1,75 @@
+doctype html
+html(lang='pt-br')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title League of Legends - Login Screen
+
+    link(rel="stylesheet", href="/assets/css/main.css")
+    link(rel="")
+  body
+    video#bgvid(autoplay, poster='assets/image/Taliyah-splash.jpg', loop, muted)
+      source(src='', type='video/webm')
+      source(src='/assets/videos/Taliyah,_the Stoneweaver_-_Login_Screen.mp4', type='video/mp4')
+    .wrapper
+      header.login
+        h1 League of Legends
+
+        .container-login
+          .login-area
+            h2 Iniciar sessão
+          hr
+          form(name='login', action='index_submit', method='get', accept-charset='utf-8')
+            ul
+              li
+                label(for='username') Nome de Usuário
+                br
+                input(type='name', name='username', required)
+              li
+                label(for='password') Senha
+                br
+                input(type='password', name='password', required)
+              li
+                label
+                  input(type='checkbox', name='save-login', value='lembrar')
+                  | Lembrar nome de usuário
+                input(type='submit', value='Conectar')
+          hr
+          .login-help
+            ul
+              li
+                a(href='http://signup.leagueoflegends.com/')
+                  | Não tem uma conta?
+                  span  Cadastre-se agora!
+              li
+                a(href='https://account.leagueoflegends.com/br/pt/forgot-username')
+                  | Esqueceu seu
+                  span  nome de usuário?
+              li
+                a(href='https://account.leagueoflegends.com/br/pt/forgot-password')
+                  | Esqueceu sua
+                  span  senha?
+
+        .sign-up
+          a(href='http://signup.leagueoflegends.com/')
+            | Jogar League of Legends é
+            span  Grátis!
+
+      footer
+        .riot-games
+          a(href="http://www.riotgames.com") Riot Games
+        .options-screen
+          ul
+            li
+              a(href='http://br.leagueoflegends.com/pt/legal/termsofuse') Termos de Uso
+            li
+              label#no-sound
+                input(type='checkbox', name='no-sound', value='desabilitar musica')
+                | Desabilitar música
+            li
+              label#no-animate
+                input(type='checkbox', name='no-animate', value='desabilitar animação')
+                | Desabilitar animações
+
+script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+script(src="assets/js/script.js")

@@ -1,0 +1,27 @@
+{
+  "name": "login-screen-lol",
+  "version": "0.0.1",
+  "description": "Login screen of game League of Legends in HTML+CSS.",
+  "main": "index.js",
+  "scripts": {
+    "minify": "gulp minifica",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lol-login",
+    "login-screen",
+    "html+css",
+    "pug+sass"
+  ],
+  "author": "Bruno Alves",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.8",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-pug": "^3.0.2",
+    "gulp-sass": "^2.3.1"
+  }
+}
